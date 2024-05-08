@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
-import { Modal, Text, Pressable, View, Image, ScrollView } from 'react-native';
+import {
+    Modal, Text, Pressable, View, Image, ScrollView,
+} from 'react-native';
 import { styles } from '../style';
 import closeIcon from '../../assets/imgs/close.png';
 
