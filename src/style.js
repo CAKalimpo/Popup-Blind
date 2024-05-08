@@ -20,6 +20,7 @@ export const styles = {
         shadowRadius: 4,
         elevation: 5,
         width: '90%',
+        height: '80%',
     },
     modalHeader: {
         flexDirection: 'row',
@@ -28,18 +29,22 @@ export const styles = {
         left: 10,
         alignItems: 'center',
         width: '100%',
-        marginBottom: 20,
+    },
+    btnStyle: {
+        flex: 1,
+        justifyContent: 'center',
+        alignItems: 'center',
     },
     button: {
         borderRadius: 20,
         padding: 10,
     },
     buttonOpen: {
-        backgroundColor: '#F194FF',
+        backgroundColor: '#008DDA',
     },
     buttonClose: {
         backgroundColor: 'transparent',
-        left: 10,
+        left: 5,
     },
     textStyle: {
         color: 'white',
@@ -51,18 +56,32 @@ export const styles = {
         flex: 1,
         fontFamily: Fonts.SFPro,
         color: 'white',
+        left: 10,
         fontSize: 16,
     },
     svStyle: {
-        top: -40,
-        width: '105%',
-        backgroundColor: '#101523',
+        flex: 1,
+        backgroundColor: 'transparent',
+        alignSelf: 'stretch',
     },
     row: {
         flexDirection: 'row',
         justifyContent: 'space-between',
+        backgroundColor: '#101523',
+        borderTopLeftRadius: 3,
+        borderTopRightRadius: 3,
+
+    },
+    rowData: {
+        flexDirection: 'row',
+        justifyContent: 'space-between',
+    },
+    data: {
+        textAlign: 'left',
+        flex: 1,
+        fontFamily: Fonts.SFPro,
         padding: 2,
-        margin: 5,
+        color: 'white',
     },
     text: {
         color: 'white',
@@ -71,6 +90,27 @@ export const styles = {
         fontFamily: Fonts.ISMR,
     },
     column: {
+        flex: 1,
+        padding: 5,
+    },
+    modalContainer: {
+        flex: 1,
+        top: -15,
+        justifyContent: 'center',
         alignItems: 'center',
+        backgroundColor: 'transparent',
+        borderRadius: 3,
+    },
+    rowEven: {
+        backgroundColor: '#2E344A',
+    },
+    rowOdd: {
+        backgroundColor: '#282D41',
+    },
+    dataCenter: {
+        textAlign: 'center',
+    },
+    dataRight: {
+        textAlign: 'right',
     },
 };

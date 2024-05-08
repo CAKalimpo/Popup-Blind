@@ -27,7 +27,7 @@
 		0A14A67F29794833AF8C3A6B /* Raleway-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F11B92A1AA464F279887C949 /* Raleway-Medium.ttf */; };
 		59B271BB82E54DE89B42C9A1 /* Raleway-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD5181039C8F4B68AEABA55D /* Raleway-Regular.ttf */; };
 		3D948B8802E34913AE0B3786 /* SF-Pro.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 396E45028C694A02BC13B57D /* SF-Pro.ttf */; };
-		1984B2A25EE84AF0B2E0B2EF /* close.png in Resources */ = {isa = PBXBuildFile; fileRef = 573CDC0FC7F748E287FD3A72 /* close.png */; };
+		0116BF3CB3C3480C9362F791 /* close.png in Resources */ = {isa = PBXBuildFile; fileRef = 0894C8888C1F4FEFB75055D1 /* close.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,7 +71,7 @@
 		F11B92A1AA464F279887C949 /* Raleway-Medium.ttf */ = {isa = PBXFileReference; name = "Raleway-Medium.ttf"; path = "../assets/fonts/Raleway-Medium.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 		AD5181039C8F4B68AEABA55D /* Raleway-Regular.ttf */ = {isa = PBXFileReference; name = "Raleway-Regular.ttf"; path = "../assets/fonts/Raleway-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 		396E45028C694A02BC13B57D /* SF-Pro.ttf */ = {isa = PBXFileReference; name = "SF-Pro.ttf"; path = "../assets/fonts/SF-Pro.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		573CDC0FC7F748E287FD3A72 /* close.png */ = {isa = PBXFileReference; name = "close.png"; path = "../assets/imgs/close.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		0894C8888C1F4FEFB75055D1 /* close.png */ = {isa = PBXFileReference; name = "close.png"; path = "../assets/imgs/close.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -193,7 +193,7 @@
 				F11B92A1AA464F279887C949 /* Raleway-Medium.ttf */,
 				AD5181039C8F4B68AEABA55D /* Raleway-Regular.ttf */,
 				396E45028C694A02BC13B57D /* SF-Pro.ttf */,
-				573CDC0FC7F748E287FD3A72 /* close.png */,
+				0894C8888C1F4FEFB75055D1 /* close.png */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -308,7 +308,7 @@
 				0A14A67F29794833AF8C3A6B /* Raleway-Medium.ttf in Resources */,
 				59B271BB82E54DE89B42C9A1 /* Raleway-Regular.ttf in Resources */,
 				3D948B8802E34913AE0B3786 /* SF-Pro.ttf in Resources */,
-				1984B2A25EE84AF0B2E0B2EF /* close.png in Resources */,
+				0116BF3CB3C3480C9362F791 /* close.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
