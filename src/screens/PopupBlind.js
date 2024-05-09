@@ -13,6 +13,7 @@ const PopUpBlind = () => {
         const intervalId = setInterval(() => {
             setBlindData((prevData) => {
                 const newLevel = prevData.length + 1;
+                if (newLevel > 30) return prevData;
                 return [...prevData, generateBlindData(newLevel)];
             });
         }, 3000);
@@ -21,6 +22,8 @@ const PopUpBlind = () => {
     }, []);
 
     const generateBlindData = (level) => {
+        if (level > 30) return null;
+
         const timeHours = Math.floor(level * 180 / 60);
         const timeMinutes = (level * 180) % 60;
         const timeString = `${timeHours.toString().padStart(2, '0')}:${timeMinutes.toString().padStart(2, '0')}`;
