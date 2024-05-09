@@ -7,7 +7,7 @@ export const styles = {
         backgroundColor: 'white',
     },
     modalView: {
-        marginTop: 10,
+        marginTop: 20,
         backgroundColor: '#131928',
         borderRadius: 5,
         padding: 20,
@@ -21,7 +21,7 @@ export const styles = {
         shadowRadius: 4,
         elevation: 5,
         width: '90%',
-        height: '80%',
+        height: '60%',
     },
     modalHeader: {
         flexDirection: 'row',
@@ -58,7 +58,7 @@ export const styles = {
         fontFamily: Fonts.SFPro,
         color: 'white',
         left: 10,
-        fontSize: 16,
+        fontSize: 22,
     },
     svStyle: {
         backgroundColor: 'transparent',
@@ -69,7 +69,7 @@ export const styles = {
         backgroundColor: '#101523',
         borderTopLeftRadius: 3,
         borderTopRightRadius: 3,
-        padding: 13,
+        padding: 10,
     },
     rowData: {
         flexDirection: 'row',
@@ -84,11 +84,13 @@ export const styles = {
         margin: 2,
         color: 'white',
         left: 10,
+        fontSize: 16,
     },
     text: {
         color: 'white',
         textAlign: 'center',
         fontFamily: Fonts.ISMR,
+        fontSize: 16,
     },
     column: {
         flex: 1,
@@ -115,12 +117,12 @@ export const styles = {
         left: -10,
     },
     titleLeft: {
-        left: -30,
+        left: -25,
     },
     titleMid: {
         left: -10,
     },
     titleRight: {
-        right: -30,
+        right: -25,
     },
 };
