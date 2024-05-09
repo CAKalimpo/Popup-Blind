@@ -20,7 +20,7 @@ export const styles = {
         shadowOpacity: 0.25,
         shadowRadius: 4,
         elevation: 5,
-        width: '90%',
+        width: '95%',
         height: '60%',
     },
     modalHeader: {
