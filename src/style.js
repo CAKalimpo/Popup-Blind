@@ -61,22 +61,20 @@ export const styles = {
         fontSize: 16,
     },
     svStyle: {
-        flex: 1,
         backgroundColor: 'transparent',
         alignSelf: 'stretch',
     },
     row: {
         flexDirection: 'row',
-        justifyContent: 'space-between',
         backgroundColor: '#101523',
         borderTopLeftRadius: 3,
         borderTopRightRadius: 3,
-        padding: 5,
-
+        padding: 13,
     },
     rowData: {
         flexDirection: 'row',
         justifyContent: 'space-between',
+        padding: 4,
     },
     data: {
         textAlign: 'left',
@@ -85,21 +83,19 @@ export const styles = {
         padding: 2,
         margin: 2,
         color: 'white',
+        left: 10,
     },
     text: {
         color: 'white',
         textAlign: 'center',
-        justifyContent: 'space-between',
         fontFamily: Fonts.ISMR,
     },
     column: {
         flex: 1,
-        padding: 5,
     },
     modalContainer: {
         flex: 1,
         top: -15,
-        justifyContent: 'center',
         alignItems: 'center',
         backgroundColor: 'transparent',
         borderRadius: 3,
@@ -112,8 +108,19 @@ export const styles = {
     },
     dataCenter: {
         textAlign: 'center',
+        left: -10,
     },
     dataRight: {
         textAlign: 'right',
+        left: -10,
+    },
+    titleLeft: {
+        left: -30,
+    },
+    titleMid: {
+        left: -10,
+    },
+    titleRight: {
+        right: -30,
     },
 };

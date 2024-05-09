@@ -61,13 +61,13 @@ const PopUpBlind = () => {
                         <View style={styles.modalContainer}>
                             <View style={styles.row}>
                                 <View style={styles.column}>
-                                    <Text style={styles.text}>Level</Text>
+                                    <Text style={[styles.text, styles.titleLeft]}>Level</Text>
                                 </View>
                                 <View style={styles.column}>
-                                    <Text style={styles.text}>Time</Text>
+                                    <Text style={[styles.text, styles.titleMid]}>Time</Text>
                                 </View>
                                 <View style={styles.column}>
-                                    <Text style={styles.text}>Blinds</Text>
+                                    <Text style={[styles.text, styles.titleRight]}>Blinds</Text>
                                 </View>
                             </View>
                             <ScrollView style={styles.svStyle}>
