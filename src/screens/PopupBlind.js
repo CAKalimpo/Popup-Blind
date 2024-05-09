@@ -8,38 +8,26 @@ import closeIcon from '../../assets/imgs/close.png';
 const PopUpBlind = () => {
     const [modalVisible, setModalVisible] = useState(false);
     const [blindData, setBlindData] = useState([]);
-    const [currentBlindIndex, setCurrentBlindIndex] = useState(0);
 
     useEffect(() => {
-        const computeBlindData = () => {
-            const data = [];
-            let bigBlind = 10;
-            let currentTime = 0;
-
-            for (let i = 1; i <= 10; i++) {
-                const level = i;
-                const timeHours = Math.floor(currentTime / 60);
-                const timeMinutes = currentTime % 60;
-                const timeString = `${timeHours.toString().padStart(2, '0')}:${timeMinutes.toString().padStart(2, '0')}`;
-                const blinds = `${bigBlind}/${bigBlind * 2}`;
-
-                data.push({ level, timeString, blinds });
-
-                bigBlind *= 2;
-                currentTime += 180;
-            }
-
-            return data;
-        };
-
-        setBlindData(computeBlindData());
-
         const intervalId = setInterval(() => {
-            setCurrentBlindIndex((prevIndex) => (prevIndex < blindData.length - 1 ? prevIndex + 1 : prevIndex));
-        }, 180000); 
+            setBlindData((prevData) => {
+                const newLevel = prevData.length + 1;
+                return [...prevData, generateBlindData(newLevel)];
+            });
+        }, 3000);
 
         return () => clearInterval(intervalId);
     }, []);
+
+    const generateBlindData = (level) => {
+        const timeHours = Math.floor(level * 180 / 60);
+        const timeMinutes = (level * 180) % 60;
+        const timeString = `${timeHours.toString().padStart(2, '0')}:${timeMinutes.toString().padStart(2, '0')}`;
+        const bigBlind = 10 * 2 ** (level - 1);
+        const blinds = `${bigBlind}/${bigBlind * 2}`;
+        return { level, timeString, blinds };
+    };
 
     const getRowBackgroundColor = (index) => (index % 2 === 0 ? styles.rowEven : styles.rowOdd);
 
@@ -80,7 +68,7 @@ const PopUpBlind = () => {
                                 </View>
                             </View>
                             <ScrollView style={styles.svStyle}>
-                                {blindData.slice(0, currentBlindIndex + 1).map((blind, index) => (
+                                {blindData.map((blind, index) => (
                                     <View style={[styles.rowData, getRowBackgroundColor(index)]} key={blind.level}>
                                         <Text style={styles.data}>{blind.level}</Text>
                                         <Text style={[styles.data, styles.dataCenter]}>{blind.timeString}</Text>
@@ -98,7 +86,7 @@ const PopUpBlind = () => {
                         style={[styles.button, styles.buttonOpen]}
                         onPress={() => setModalVisible(true)}
                     >
-                        <Text style={styles.textStyle}>Pop-up Modal</Text>
+                        <Text style={styles.textStyle}>Pop-up Blinds</Text>
                     </Pressable>
                 </View>
             )}

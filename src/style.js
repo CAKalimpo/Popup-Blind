@@ -4,9 +4,10 @@ export const styles = {
     centeredView: {
         flex: 1,
         alignItems: 'center',
-        marginTop: 15,
+        backgroundColor: 'white',
     },
     modalView: {
+        marginTop: 10,
         backgroundColor: '#131928',
         borderRadius: 5,
         padding: 20,
@@ -70,6 +71,7 @@ export const styles = {
         backgroundColor: '#101523',
         borderTopLeftRadius: 3,
         borderTopRightRadius: 3,
+        padding: 5,
 
     },
     rowData: {
@@ -81,6 +83,7 @@ export const styles = {
         flex: 1,
         fontFamily: Fonts.SFPro,
         padding: 2,
+        margin: 2,
         color: 'white',
     },
     text: {
